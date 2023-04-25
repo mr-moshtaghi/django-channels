@@ -1,4 +1,5 @@
 .~lock.Main.docx#
 venv/
 .idea/
-__pychace__/
+__pycache__/
+db.sqlite3
