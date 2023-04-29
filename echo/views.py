@@ -4,4 +4,4 @@ import json
 
 
 def index(request):
-    return HttpResponse('Hello World')
+    return render(request, 'echo/index.html')
