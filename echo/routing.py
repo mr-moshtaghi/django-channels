@@ -4,5 +4,5 @@ from echo import consumers
 
 
 websocket_urlpatterns = [
-    path('ws/', consumers.EchoConsumer.a)
+    path('ws/', consumers.EchoConsumer)
 ]

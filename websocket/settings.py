@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'echo.apps.EchoConfig',
 ]
 
@@ -72,7 +73,7 @@ TEMPLATES = [
 # WSGI_APPLICATION = 'websocket.wsgi.application'
 
 # channels
-# ASGI_APPLICATION = 'websocket.routing.application'
+ASGI_APPLICATION = 'websocket.routing.application'
 
 
 # Database
