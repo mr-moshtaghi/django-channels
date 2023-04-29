@@ -9,4 +9,7 @@ class EchoConsumer(WebsocketConsumer):
         pass
 
     def receive(self, text_data=None, bytes_data=None):
-        self.send(text_data=text_data + " - Sent By Server")
+        if text_data:
+            self.send(text_data=text_data + " - Sent By Server")
+        elif bytes_data:
+            self.send(bytes_data=bytes_data)
